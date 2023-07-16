@@ -6,8 +6,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"config-wrapper/app"
-	"config-wrapper/protocol"
+	"github.com/upmio/config-wrapper/app"
+	"github.com/upmio/config-wrapper/protocol"
 )
 
 var (

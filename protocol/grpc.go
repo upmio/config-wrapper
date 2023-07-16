@@ -1,8 +1,8 @@
 package protocol
 
 import (
-	"config-wrapper/app"
-	"config-wrapper/conf"
+	"github.com/upmio/config-wrapper/app"
+	"github.com/upmio/config-wrapper/conf"
 	"go.uber.org/zap"
 	"net"
 

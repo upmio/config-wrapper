@@ -11,11 +11,11 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	"config-wrapper/app"
-	"config-wrapper/app/config/confd"
-	"config-wrapper/app/config/confd/backends"
-	"config-wrapper/app/config/confd/template"
-	"config-wrapper/conf"
+	"github.com/upmio/config-wrapper/app"
+	"github.com/upmio/config-wrapper/app/config/confd"
+	"github.com/upmio/config-wrapper/app/config/confd/backends"
+	"github.com/upmio/config-wrapper/app/config/confd/template"
+	"github.com/upmio/config-wrapper/conf"
 )
 
 var (

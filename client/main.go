@@ -1,9 +1,9 @@
 package main
 
 import (
-	"config-wrapper/app/config"
 	"context"
 	"fmt"
+	"github.com/upmio/config-wrapper/app/config"
 	"log"
 
 	"google.golang.org/grpc"

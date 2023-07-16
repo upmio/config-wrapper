@@ -1,8 +1,8 @@
 package confd
 
 import (
-	"config-wrapper/app/config/confd/backends"
-	"config-wrapper/app/config/confd/template"
+	"github.com/upmio/config-wrapper/app/config/confd/backends"
+	"github.com/upmio/config-wrapper/app/config/confd/template"
 )
 
 type TemplateConfig = template.Config

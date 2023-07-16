@@ -6,7 +6,7 @@ import (
 
 const (
 	// ServiceName 服务名称
-	ServiceName = "config-wrapper"
+	ServiceName = "github.com/upmio/config-wrapper"
 )
 
 var (

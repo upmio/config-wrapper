@@ -15,7 +15,7 @@ import (
 
 	"github.com/kelseyhightower/memkv"
 
-	"config-wrapper/pkg/util"
+	"github.com/upmio/config-wrapper/pkg/util"
 )
 
 func newFuncMap() map[string]interface{} {

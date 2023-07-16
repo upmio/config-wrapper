@@ -13,13 +13,13 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"config-wrapper/app"
-	"config-wrapper/conf"
-	"config-wrapper/protocol"
-	"config-wrapper/version"
+	"github.com/upmio/config-wrapper/app"
+	"github.com/upmio/config-wrapper/conf"
+	"github.com/upmio/config-wrapper/protocol"
+	"github.com/upmio/config-wrapper/version"
 
 	// 新增服务需要在import
-	_ "config-wrapper/app/config"
+	_ "github.com/upmio/config-wrapper/app/config"
 )
 
 var (
@@ -81,7 +81,7 @@ var daemonCmd = &cobra.Command{
 }
 
 func init() {
-	daemonCmd.PersistentFlags().StringVarP(&configPath, "file", "f", "/etc/config-wrapper/config.toml", "Specify the config file path")
+	daemonCmd.PersistentFlags().StringVarP(&configPath, "file", "f", "/etc/github.com/upmio/config-wrapper/config.toml", "Specify the config file path")
 	rootCmd.AddCommand(daemonCmd)
 }
 

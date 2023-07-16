@@ -1,4 +1,4 @@
-module config-wrapper
+module github.com/upmio/config-wrapper
 
 go 1.20
 

@@ -1,11 +1,11 @@
 package service
 
 import (
-	"config-wrapper/app"
-	"config-wrapper/conf"
 	"context"
 	"fmt"
 	"github.com/abrander/go-supervisord"
+	"github.com/upmio/config-wrapper/app"
+	"github.com/upmio/config-wrapper/conf"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )

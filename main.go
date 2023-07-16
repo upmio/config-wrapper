@@ -1,8 +1,8 @@
 package main
 
-import "config-wrapper/cmd"
+import "github.com/upmio/config-wrapper/cmd"
 
-// @title config-wrapper api demo
+// @title github.com/upmio/config-wrapper api demo
 // @version 1.0
 // @description swagger测试
 

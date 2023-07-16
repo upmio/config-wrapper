@@ -3,8 +3,8 @@ package backends
 import (
 	"errors"
 
-	"config-wrapper/app/config/confd/backends/content"
-	"config-wrapper/app/config/confd/backends/file"
+	"github.com/upmio/config-wrapper/app/config/confd/backends/content"
+	"github.com/upmio/config-wrapper/app/config/confd/backends/file"
 )
 
 // The StoreClient interface is implemented by objects that can retrieve

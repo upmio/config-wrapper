@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"config-wrapper/version"
 	"errors"
 	"fmt"
+	"github.com/upmio/config-wrapper/version"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -15,7 +15,7 @@ var (
 
 // RootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use: "config-wrapper is used to wrapper configmap or secret object in kubernetes.",
+	Use: "github.com/upmio/config-wrapper is used to wrapper configmap or secret object in kubernetes.",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		if vers {
 			fmt.Println(version.FullVersion())

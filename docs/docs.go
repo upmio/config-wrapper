@@ -100,7 +100,7 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "127.0.0.1:22104",
 	BasePath:         "",
 	Schemes:          []string{},
-	Title:            "config-wrapper api demo",
+	Title:            "github.com/upmio/config-wrapper api demo",
 	Description:      "swagger测试",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,

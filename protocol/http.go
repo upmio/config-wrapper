@@ -12,9 +12,9 @@ import (
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"go.uber.org/zap"
 
-	"config-wrapper/app"
-	"config-wrapper/conf"
-	"config-wrapper/docs"
+	"github.com/upmio/config-wrapper/app"
+	"github.com/upmio/config-wrapper/conf"
+	"github.com/upmio/config-wrapper/docs"
 )
 
 const (

@@ -12,8 +12,8 @@ import (
 
 	"github.com/kelseyhightower/memkv"
 
-	"config-wrapper/app/config/confd/backends"
-	"config-wrapper/pkg/util"
+	"github.com/upmio/config-wrapper/app/config/confd/backends"
+	"github.com/upmio/config-wrapper/pkg/util"
 )
 
 type Config struct {
