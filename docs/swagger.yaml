@@ -1,0 +1,57 @@
+definitions:
+  config.SyncConfigRequest:
+    properties:
+      configmap_name:
+        type: string
+      namespace:
+        type: string
+    required:
+    - configmap_name
+    - namespace
+    type: object
+  config.SyncConfigResponse:
+    properties:
+      message:
+        type: string
+    type: object
+host: 127.0.0.1:22104
+info:
+  contact:
+    email: yuzhenhao0906@gmail.com
+    name: 俞桢浩
+    url: http://bsgchind.io
+  description: swagger测试
+  title: config-wrapper api demo
+  version: "1.0"
+paths:
+  /config/sync:
+    post:
+      consumes:
+      - application/json
+      description: 在kubernetes集群中获取ConfigMap的内容,使用confd落地生成为对应软件格式的配置文件
+      parameters:
+      - description: ConfigMap信息
+        in: body
+        name: SyncConfigRequest
+        required: true
+        schema:
+          $ref: '#/definitions/config.SyncConfigRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/config.SyncConfigResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/config.SyncConfigResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/config.SyncConfigResponse'
+      summary: 同步配置文件接口
+      tags:
+      - 同步配置文件接口
+swagger: "2.0"

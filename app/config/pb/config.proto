@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package config;
+option go_package="gitlab.bsgchina.com/upm/config-wrapper/app/config";
+
+message SyncConfigRequest {
+  string namespace = 1;
+  string configmap_name = 2;
+}
+
+message SyncConfigResponse {
+  string message = 1;
+}
+
+service SyncConfigService {
+  rpc SyncConfig (SyncConfigRequest) returns (SyncConfigResponse);
+}

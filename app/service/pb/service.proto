@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package service;
+option go_package="gitlab.bsgchina.com/upm/config-wrapper/app/service";
+
+message ServiceRequest {
+}
+
+message ServiceResponse {
+  string message = 1;
+}
+
+service ServiceLifecycle {
+  rpc StartService (ServiceRequest) returns (ServiceResponse);
+  rpc StopService (ServiceRequest) returns (ServiceResponse);
+}
